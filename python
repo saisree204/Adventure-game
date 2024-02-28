@@ -1,0 +1,28 @@
+# Python text based adventure game
+answer = input("Are you intrested to play this text adventure game? [yes/no]")
+
+if answer == "yes":
+    print("That's great!")
+    answer = input("Do you want to explore a forest or a Haunted house? [forest/Haunted house]")
+
+    if answer == "Haunted house":
+        print("You go into house and see an Animal body")
+        print()
+        answer = input("Do you want to go or runaway? [go/runaway]")
+
+        if answer == "go":
+            print("So scary inside! You lose")
+
+        elif answer == "runaway":
+                print("You ran away! You win! ")
+
+        else:
+            print("Invalid option, You lose!")
+
+    elif answer == "forest":
+        print("You meet wild animals and you get eaten! You lose!")   
+
+    else:
+         print("Invalid option, You lose!")
+else:
+    print("But this is a really great game")
